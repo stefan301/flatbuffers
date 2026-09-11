@@ -827,7 +827,7 @@ inline const ::flatbuffers::TypeTable *BazTypeTable() {
     "b"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 2, type_codes, nullptr, array_sizes, values, names
+    ::flatbuffers::ST_STRUCT, 2, type_codes, nullptr, array_sizes, values, names, "keyfield.sample.Baz"
   };
   return &tt;
 }
@@ -844,7 +844,7 @@ inline const ::flatbuffers::TypeTable *BarTypeTable() {
     "b"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 2, type_codes, nullptr, array_sizes, values, names
+    ::flatbuffers::ST_STRUCT, 2, type_codes, nullptr, array_sizes, values, names, "keyfield.sample.Bar"
   };
   return &tt;
 }
@@ -861,7 +861,7 @@ inline const ::flatbuffers::TypeTable *ColorTypeTable() {
     "tag"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 2, type_codes, nullptr, array_sizes, values, names
+    ::flatbuffers::ST_STRUCT, 2, type_codes, nullptr, array_sizes, values, names, "keyfield.sample.Color"
   };
   return &tt;
 }
@@ -880,7 +880,7 @@ inline const ::flatbuffers::TypeTable *AppleTypeTable() {
     "color"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 2, type_codes, type_refs, nullptr, values, names
+    ::flatbuffers::ST_STRUCT, 2, type_codes, type_refs, nullptr, values, names, "keyfield.sample.Apple"
   };
   return &tt;
 }
@@ -899,7 +899,7 @@ inline const ::flatbuffers::TypeTable *FruitTypeTable() {
     "b"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 2, type_codes, type_refs, nullptr, values, names
+    ::flatbuffers::ST_STRUCT, 2, type_codes, type_refs, nullptr, values, names, "keyfield.sample.Fruit"
   };
   return &tt;
 }
@@ -916,7 +916,7 @@ inline const ::flatbuffers::TypeTable *RiceTypeTable() {
     "quantity"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 2, type_codes, nullptr, array_sizes, values, names
+    ::flatbuffers::ST_STRUCT, 2, type_codes, nullptr, array_sizes, values, names, "keyfield.sample.Rice"
   };
   return &tt;
 }
@@ -936,7 +936,7 @@ inline const ::flatbuffers::TypeTable *GrainTypeTable() {
     "tag"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 2, type_codes, type_refs, array_sizes, values, names
+    ::flatbuffers::ST_STRUCT, 2, type_codes, type_refs, array_sizes, values, names, "keyfield.sample.Grain"
   };
   return &tt;
 }
@@ -970,7 +970,7 @@ inline const ::flatbuffers::TypeTable *FooTableTypeTable() {
     "h"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 8, type_codes, type_refs, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 8, type_codes, type_refs, nullptr, nullptr, names, "keyfield.sample.FooTable"
   };
   return &tt;
 }

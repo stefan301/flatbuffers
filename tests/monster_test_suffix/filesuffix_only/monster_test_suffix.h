@@ -3785,7 +3785,7 @@ inline const ::flatbuffers::TypeTable *ColorTypeTable() {
     "Blue"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_ENUM, 3, type_codes, type_refs, nullptr, values, names
+    ::flatbuffers::ST_ENUM, 3, type_codes, type_refs, nullptr, values, names, "MyGame.Example.Color"
   };
   return &tt;
 }
@@ -3808,7 +3808,7 @@ inline const ::flatbuffers::TypeTable *RaceTypeTable() {
     "Elf"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_ENUM, 4, type_codes, type_refs, nullptr, values, names
+    ::flatbuffers::ST_ENUM, 4, type_codes, type_refs, nullptr, values, names, "MyGame.Example.Race"
   };
   return &tt;
 }
@@ -3829,7 +3829,7 @@ inline const ::flatbuffers::TypeTable *LongEnumTypeTable() {
     "LongBig"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_ENUM, 3, type_codes, type_refs, nullptr, values, names
+    ::flatbuffers::ST_ENUM, 3, type_codes, type_refs, nullptr, values, names, "MyGame.Example.LongEnum"
   };
   return &tt;
 }
@@ -3853,7 +3853,7 @@ inline const ::flatbuffers::TypeTable *AnyTypeTable() {
     "MyGame_Example2_Monster"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_UNION, 4, type_codes, type_refs, nullptr, nullptr, names
+    ::flatbuffers::ST_UNION, 4, type_codes, type_refs, nullptr, nullptr, names, "MyGame.Example.Any"
   };
   return &tt;
 }
@@ -3877,7 +3877,7 @@ inline const ::flatbuffers::TypeTable *AnyUniqueAliasesTypeTable() {
     "M2"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_UNION, 4, type_codes, type_refs, nullptr, nullptr, names
+    ::flatbuffers::ST_UNION, 4, type_codes, type_refs, nullptr, nullptr, names, "MyGame.Example.AnyUniqueAliases"
   };
   return &tt;
 }
@@ -3899,7 +3899,7 @@ inline const ::flatbuffers::TypeTable *AnyAmbiguousAliasesTypeTable() {
     "M3"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_UNION, 4, type_codes, type_refs, nullptr, nullptr, names
+    ::flatbuffers::ST_UNION, 4, type_codes, type_refs, nullptr, nullptr, names, "MyGame.Example.AnyAmbiguousAliases"
   };
   return &tt;
 }
@@ -3908,7 +3908,7 @@ inline const ::flatbuffers::TypeTable *AnyAmbiguousAliasesTypeTable() {
 
 inline const ::flatbuffers::TypeTable *InParentNamespaceTypeTable() {
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 0, nullptr, nullptr, nullptr, nullptr, nullptr
+    ::flatbuffers::ST_TABLE, 0, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr
   };
   return &tt;
 }
@@ -3917,7 +3917,7 @@ namespace Example2 {
 
 inline const ::flatbuffers::TypeTable *MonsterTypeTable() {
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 0, nullptr, nullptr, nullptr, nullptr, nullptr
+    ::flatbuffers::ST_TABLE, 0, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr
   };
   return &tt;
 }
@@ -3937,7 +3937,7 @@ inline const ::flatbuffers::TypeTable *TestTypeTable() {
     "b"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 2, type_codes, nullptr, nullptr, values, names
+    ::flatbuffers::ST_STRUCT, 2, type_codes, nullptr, nullptr, values, names, "MyGame.Example.Test"
   };
   return &tt;
 }
@@ -3953,7 +3953,7 @@ inline const ::flatbuffers::TypeTable *TestSimpleTableWithEnumTypeTable() {
     "color"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 1, type_codes, type_refs, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 1, type_codes, type_refs, nullptr, nullptr, names, "MyGame.Example.TestSimpleTableWithEnum"
   };
   return &tt;
 }
@@ -3981,7 +3981,7 @@ inline const ::flatbuffers::TypeTable *Vec3TypeTable() {
     "test3"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 6, type_codes, type_refs, nullptr, values, names
+    ::flatbuffers::ST_STRUCT, 6, type_codes, type_refs, nullptr, values, names, "MyGame.Example.Vec3"
   };
   return &tt;
 }
@@ -3997,7 +3997,7 @@ inline const ::flatbuffers::TypeTable *AbilityTypeTable() {
     "distance"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 2, type_codes, nullptr, nullptr, values, names
+    ::flatbuffers::ST_STRUCT, 2, type_codes, nullptr, nullptr, values, names, "MyGame.Example.Ability"
   };
   return &tt;
 }
@@ -4019,7 +4019,7 @@ inline const ::flatbuffers::TypeTable *StructOfStructsTypeTable() {
     "c"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 3, type_codes, type_refs, nullptr, values, names
+    ::flatbuffers::ST_STRUCT, 3, type_codes, type_refs, nullptr, values, names, "MyGame.Example.StructOfStructs"
   };
   return &tt;
 }
@@ -4036,7 +4036,7 @@ inline const ::flatbuffers::TypeTable *StructOfStructsOfStructsTypeTable() {
     "a"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 1, type_codes, type_refs, nullptr, values, names
+    ::flatbuffers::ST_STRUCT, 1, type_codes, type_refs, nullptr, values, names, "MyGame.Example.StructOfStructsOfStructs"
   };
   return &tt;
 }
@@ -4053,7 +4053,7 @@ inline const ::flatbuffers::TypeTable *StatTypeTable() {
     "count"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 3, type_codes, nullptr, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 3, type_codes, nullptr, nullptr, nullptr, names, "MyGame.Example.Stat"
   };
   return &tt;
 }
@@ -4066,7 +4066,7 @@ inline const ::flatbuffers::TypeTable *ReferrableTypeTable() {
     "id"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names, "MyGame.Example.Referrable"
   };
   return &tt;
 }
@@ -4216,7 +4216,7 @@ inline const ::flatbuffers::TypeTable *MonsterTypeTable() {
     "double_inf_default"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 62, type_codes, type_refs, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 62, type_codes, type_refs, nullptr, nullptr, names, "MyGame.Example.Monster"
   };
   return &tt;
 }
@@ -4251,7 +4251,7 @@ inline const ::flatbuffers::TypeTable *TypeAliasesTypeTable() {
     "vf64"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 12, type_codes, nullptr, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 12, type_codes, nullptr, nullptr, nullptr, names, "MyGame.Example.TypeAliases"
   };
   return &tt;
 }

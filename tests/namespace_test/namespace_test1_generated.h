@@ -410,7 +410,7 @@ inline const ::flatbuffers::TypeTable *UnionInNestedNSTypeTable() {
     "TableInNestedNS"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_UNION, 2, type_codes, type_refs, nullptr, nullptr, names
+    ::flatbuffers::ST_UNION, 2, type_codes, type_refs, nullptr, nullptr, names, "NamespaceA.NamespaceB.UnionInNestedNS"
   };
   return &tt;
 }
@@ -430,7 +430,7 @@ inline const ::flatbuffers::TypeTable *EnumInNestedNSTypeTable() {
     "C"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_ENUM, 3, type_codes, type_refs, nullptr, nullptr, names
+    ::flatbuffers::ST_ENUM, 3, type_codes, type_refs, nullptr, nullptr, names, "NamespaceA.NamespaceB.EnumInNestedNS"
   };
   return &tt;
 }
@@ -443,7 +443,7 @@ inline const ::flatbuffers::TypeTable *TableInNestedNSTypeTable() {
     "foo"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names, "NamespaceA.NamespaceB.TableInNestedNS"
   };
   return &tt;
 }
@@ -459,7 +459,7 @@ inline const ::flatbuffers::TypeTable *StructInNestedNSTypeTable() {
     "b"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 2, type_codes, nullptr, nullptr, values, names
+    ::flatbuffers::ST_STRUCT, 2, type_codes, nullptr, nullptr, values, names, "NamespaceA.NamespaceB.StructInNestedNS"
   };
   return &tt;
 }

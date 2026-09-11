@@ -573,7 +573,7 @@ inline const ::flatbuffers::TypeTable *LeafStructTypeTable() {
     "b"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 2, type_codes, nullptr, nullptr, values, names
+    ::flatbuffers::ST_STRUCT, 2, type_codes, nullptr, nullptr, values, names, "LeafStruct"
   };
   return &tt;
 }
@@ -586,7 +586,7 @@ inline const ::flatbuffers::TypeTable *WrapperTableTypeTable() {
     "vector"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names, "WrapperTable"
   };
   return &tt;
 }
@@ -623,7 +623,7 @@ inline const ::flatbuffers::TypeTable *RootTableTypeTable() {
     "forced_aligned_vector"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 11, type_codes, type_refs, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 11, type_codes, type_refs, nullptr, nullptr, names, "RootTable"
   };
   return &tt;
 }

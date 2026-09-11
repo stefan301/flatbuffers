@@ -160,7 +160,7 @@ inline const ::flatbuffers::TypeTable *RootTableTypeTable() {
     "b"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 2, type_codes, nullptr, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 2, type_codes, nullptr, nullptr, nullptr, names, "v1.RootTable"
   };
   return &tt;
 }

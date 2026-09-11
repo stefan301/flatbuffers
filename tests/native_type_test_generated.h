@@ -474,7 +474,7 @@ inline const ::flatbuffers::TypeTable *Vector3DTypeTable() {
     "z"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 3, type_codes, nullptr, nullptr, values, names
+    ::flatbuffers::ST_STRUCT, 3, type_codes, nullptr, nullptr, values, names, "Geometry.Vector3D"
   };
   return &tt;
 }
@@ -492,7 +492,7 @@ inline const ::flatbuffers::TypeTable *Vector3DAltTypeTable() {
     "c"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 3, type_codes, nullptr, nullptr, values, names
+    ::flatbuffers::ST_STRUCT, 3, type_codes, nullptr, nullptr, values, names, "Geometry.Vector3DAlt"
   };
   return &tt;
 }
@@ -509,7 +509,7 @@ inline const ::flatbuffers::TypeTable *MatrixTypeTable() {
     "values"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 3, type_codes, nullptr, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 3, type_codes, nullptr, nullptr, nullptr, names, "Geometry.Matrix"
   };
   return &tt;
 }
@@ -537,7 +537,7 @@ inline const ::flatbuffers::TypeTable *ApplicationDataTypeTable() {
     "matrices"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 6, type_codes, type_refs, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 6, type_codes, type_refs, nullptr, nullptr, names, "Geometry.ApplicationData"
   };
   return &tt;
 }

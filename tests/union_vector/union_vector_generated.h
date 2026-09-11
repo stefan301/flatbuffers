@@ -1147,7 +1147,7 @@ inline const ::flatbuffers::TypeTable *CharacterTypeTable() {
     "Unused"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_UNION, 7, type_codes, type_refs, nullptr, nullptr, names
+    ::flatbuffers::ST_UNION, 7, type_codes, type_refs, nullptr, nullptr, names, "Character"
   };
   return &tt;
 }
@@ -1168,7 +1168,7 @@ inline const ::flatbuffers::TypeTable *GadgetTypeTable() {
     "HandFan"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_UNION, 3, type_codes, type_refs, nullptr, nullptr, names
+    ::flatbuffers::ST_UNION, 3, type_codes, type_refs, nullptr, nullptr, names, "Gadget"
   };
   return &tt;
 }
@@ -1181,7 +1181,7 @@ inline const ::flatbuffers::TypeTable *AttackerTypeTable() {
     "sword_attack_damage"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names, "Attacker"
   };
   return &tt;
 }
@@ -1195,7 +1195,7 @@ inline const ::flatbuffers::TypeTable *RapunzelTypeTable() {
     "hair_length"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 1, type_codes, nullptr, nullptr, values, names
+    ::flatbuffers::ST_STRUCT, 1, type_codes, nullptr, nullptr, values, names, "Rapunzel"
   };
   return &tt;
 }
@@ -1209,7 +1209,7 @@ inline const ::flatbuffers::TypeTable *BookReaderTypeTable() {
     "books_read"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 1, type_codes, nullptr, nullptr, values, names
+    ::flatbuffers::ST_STRUCT, 1, type_codes, nullptr, nullptr, values, names, "BookReader"
   };
   return &tt;
 }
@@ -1223,7 +1223,7 @@ inline const ::flatbuffers::TypeTable *FallingTubTypeTable() {
     "weight"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_STRUCT, 1, type_codes, nullptr, nullptr, values, names
+    ::flatbuffers::ST_STRUCT, 1, type_codes, nullptr, nullptr, values, names, "FallingTub"
   };
   return &tt;
 }
@@ -1236,7 +1236,7 @@ inline const ::flatbuffers::TypeTable *HandFanTypeTable() {
     "length"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names, "HandFan"
   };
   return &tt;
 }
@@ -1258,7 +1258,7 @@ inline const ::flatbuffers::TypeTable *MovieTypeTable() {
     "characters"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 4, type_codes, type_refs, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 4, type_codes, type_refs, nullptr, nullptr, names, "Movie"
   };
   return &tt;
 }

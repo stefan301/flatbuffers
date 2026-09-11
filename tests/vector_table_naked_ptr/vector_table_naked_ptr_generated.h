@@ -255,7 +255,7 @@ inline const ::flatbuffers::TypeTable *BTypeTable() {
     "id"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names, "B"
   };
   return &tt;
 }
@@ -271,7 +271,7 @@ inline const ::flatbuffers::TypeTable *ATypeTable() {
     "b"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 1, type_codes, type_refs, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 1, type_codes, type_refs, nullptr, nullptr, names, "A"
   };
   return &tt;
 }

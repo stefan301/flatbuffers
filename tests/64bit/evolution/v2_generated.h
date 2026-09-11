@@ -184,7 +184,7 @@ inline const ::flatbuffers::TypeTable *RootTableTypeTable() {
     "big_vector"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 3, type_codes, nullptr, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 3, type_codes, nullptr, nullptr, nullptr, names, "v2.RootTable"
   };
   return &tt;
 }

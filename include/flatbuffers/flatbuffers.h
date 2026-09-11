@@ -237,6 +237,9 @@ struct TypeTable {
   const int16_t* array_sizes;     // less than num_elems entries (see TypeCode).
   const int64_t* values;  // Only set for non-consecutive enum/union or structs.
   const char* const* names;  // Only set if compiled with --reflect-names.
+  // Fully qualified name of the struct/table/enum/union. Only set if
+  // compiled with --reflect-names.
+  const char* const name;
 };
 
 // String which identifies the current version of FlatBuffers.

@@ -241,7 +241,7 @@ inline const ::flatbuffers::TypeTable *NativeInlineTableTypeTable() {
     "a"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names, "NativeInlineTable"
   };
   return &tt;
 }
@@ -257,7 +257,7 @@ inline const ::flatbuffers::TypeTable *TestNativeInlineTableTypeTable() {
     "t"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 1, type_codes, type_refs, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 1, type_codes, type_refs, nullptr, nullptr, names, "TestNativeInlineTable"
   };
   return &tt;
 }

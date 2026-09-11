@@ -1316,6 +1316,12 @@ class CppGenerator : public BaseGenerator {
       code_ += "  static const char * const names[] = {";
       code_ += "    {{NAMES}}";
       code_ += "  };";
+      auto fully_qualified_name =
+          struct_def ? struct_def->defined_namespace->GetFullyQualifiedName(
+                            struct_def->name)
+                     : enum_def->defined_namespace->GetFullyQualifiedName(
+                           enum_def->name);
+      code_.SetValue("FULLY_QUALIFIED_NAME", fully_qualified_name);
     }
     code_ += "  static const ::flatbuffers::TypeTable tt = {";
     code_ += std::string("    ::flatbuffers::{{SEQ_TYPE}}, {{NUM_FIELDS}}, ") +
@@ -1323,7 +1329,8 @@ class CppGenerator : public BaseGenerator {
              (!type_refs.empty() ? "type_refs, " : "nullptr, ") +
              (!as.empty() ? "array_sizes, " : "nullptr, ") +
              (!vs.empty() ? "values, " : "nullptr, ") +
-             (has_names ? "names" : "nullptr");
+             (has_names ? "names, \"{{FULLY_QUALIFIED_NAME}}\""
+                        : "nullptr, nullptr");
     code_ += "  };";
     code_ += "  return &tt;";
     code_ += "}";

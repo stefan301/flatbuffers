@@ -839,7 +839,7 @@ inline const ::flatbuffers::TypeTable *ABCTypeTable() {
     "C"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_UNION, 4, type_codes, type_refs, nullptr, values, names
+    ::flatbuffers::ST_UNION, 4, type_codes, type_refs, nullptr, values, names, "UnionUnderlyingType.ABC"
   };
   return &tt;
 }
@@ -852,7 +852,7 @@ inline const ::flatbuffers::TypeTable *ATypeTable() {
     "a"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names, "UnionUnderlyingType.A"
   };
   return &tt;
 }
@@ -865,7 +865,7 @@ inline const ::flatbuffers::TypeTable *BTypeTable() {
     "b"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names, "UnionUnderlyingType.B"
   };
   return &tt;
 }
@@ -878,7 +878,7 @@ inline const ::flatbuffers::TypeTable *CTypeTable() {
     "c"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 1, type_codes, nullptr, nullptr, nullptr, names, "UnionUnderlyingType.C"
   };
   return &tt;
 }
@@ -900,7 +900,7 @@ inline const ::flatbuffers::TypeTable *DTypeTable() {
     "test_vector_of_union"
   };
   static const ::flatbuffers::TypeTable tt = {
-    ::flatbuffers::ST_TABLE, 4, type_codes, type_refs, nullptr, nullptr, names
+    ::flatbuffers::ST_TABLE, 4, type_codes, type_refs, nullptr, nullptr, names, "UnionUnderlyingType.D"
   };
   return &tt;
 }
